@@ -26,8 +26,9 @@ body{
     font-size : 1.1rem;
     color: var(--color-white);
     transition: 1.5s all ease-in-out;
-    width: 100%;
+    width: 100vw;
     overflow-x: hidden;
+
 }
 a{
     display: inline-block;
@@ -522,7 +523,7 @@ section{
             .contact-item {
                 display: flex;
                 align-items: center;
-                justify-content: space-between;
+                justify-content:space-between;
                 p {
                     margin: .3rem 0 ;
                     padding: 0 ;
@@ -568,36 +569,7 @@ section{
         }
     }
 
-    .right-contact {
-        flex: 3;
-        margin-left: 3rem;
-        .input-control {
-            margin: 1.5rem 0;
-            input, textarea {
-                border-radius: 30px;
-                font-weight: inherit;
-                font-size: inherit;
-                font-family: inherit;
-                padding: .8rem 1.1rem;
-                outline: none;
-                border: none;
-                background-color: var(--color-grey-5);
-                width: 100%;
-                color: var(--color-white);
-                resize: none;
-            }
-        }
-        .i-c-2 {
-            display: flex;
-            :last-child{
-                margin-left: 1.5rem;
-            }
-        }
-        .submit-btn {
-            display: flex;
-            justify-content: flex-start;
-        }
-    }
+    
 }
 
 
@@ -627,10 +599,7 @@ section{
 
     .contact-content-con{
         flex-direction: column;
-        .right-contact{
-            margin-left: 0;
-            margin-top: 2.5rem;
-        }
+        
         
     }
     .contact-content-con .right-contact .i-c-2{
@@ -855,6 +824,27 @@ section{
     .portfolios{
         grid-template-columns: repeat(1, 1fr);
     }
+}
+
+
+@media screen and (max-width : 768px) {
+   .contact-icons{
+    .contact-icon{
+        display: flex;
+        flex-direction: row;
+        
+        justify-content: space-between; 
+        
+    }
+   }
+
+   .contact-item{
+    display: flex;
+    flex-direction: column;
+    align-items :flex-start;
+
+   }
+    
 }
 
 @media screen and (max-width:970px){
